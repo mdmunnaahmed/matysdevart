@@ -6,7 +6,7 @@
 	z-index: 111;
 	@extend %transition;
 	&.sticky {
-		background-color: hsl(var(--accent));
+		background-color: hsl(var(--white));
 		box-shadow: 0 3px 15px hsl(var(--dark) / 0.1);
 		border-bottom: 1px solid hsl(var(--white) / 0.15);
 	}

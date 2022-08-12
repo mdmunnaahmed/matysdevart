@@ -32,11 +32,14 @@ h1 {
 }
 h2 {
 	font-size: 64px;
-	@include breakpoint(max-md) {
+	@include breakpoint(max-xl) {
 		font-size: 56px;
 	}
+	@include breakpoint(max-lg) {
+		font-size: 40px;
+	}
 	@include breakpoint(max-sm) {
-		font-size: 46px;
+		font-size: 32px;
 	}
 }
 

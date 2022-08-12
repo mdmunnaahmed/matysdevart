@@ -3,14 +3,18 @@
     border-top: 1px solid hsl(var(--border));
     padding-top: 40px;
     padding-bottom: 100px;
+    @include breakpoint(max-sm) {
+        padding-bottom: 60px;
+    }
     &__title {
         margin-bottom: 40px;
+        letter-spacing: 10px;
+        @include breakpoint(max-sm) {
+            letter-spacing: 3px;
+        }
     }
 }
 .filter-slider {
-    .single-slide {
-        height: 580px;
-    }
     img {
         width: 100%;
         height: 100%;
@@ -50,7 +54,6 @@
 
 // Talk Section Starts Here
 .talk-thumb {
-    height: 645px;
     img {
         width: 100%;
         height: 100%;
@@ -59,4 +62,19 @@
 }
 .talk-content {
     padding-left: 100px;
+    @include breakpoint(max-xl) {
+        padding-left: 50px;
+    }
+    @include breakpoint(max-lg) {
+        padding-left: 0px;
+    }
+    p {
+        font-size: 26px;
+        @include breakpoint(max-lg) {
+            font-size: 22px;
+        }
+        @include breakpoint(max-sm) {
+            font-size: 20px;
+        }
+    }
 }
