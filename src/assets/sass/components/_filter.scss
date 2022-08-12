@@ -1,0 +1,17 @@
+.filter {
+	justify-content: center;
+	padding: 25px 0;
+	li {
+		a {
+			color: hsl(var(--body));
+			font-size: 20px;
+			@include breakpoint(max-xxl) {
+				font-size: 18px;
+			}
+			&.active,
+			&:hover {
+				color: hsl(var(--base));
+			}
+		}
+	}
+}

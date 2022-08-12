@@ -1,0 +1,21 @@
+// Banner Section
+.banner-section {
+	padding-top: 100px;
+    z-index: 1;
+    &::before {
+        @extend %position-set;
+        background-color: hsl(var(--white)/.70);
+        z-index: -1;
+    }
+}
+.banner-title {
+	max-width: 1000px;
+	font-size: 250px;
+	font-weight: 400;
+	line-height: 1;
+    @include breakpoint(max-xxl) {
+        font-size: 200px;
+        max-width: 750px;
+    }
+}
+// Banner Section
