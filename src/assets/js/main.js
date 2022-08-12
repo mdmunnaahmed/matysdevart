@@ -76,6 +76,19 @@ $(".scrollToTop").on("click", function () {
 	return false;
 });
 
+// Filter Slider Starts 
+
+$(".filter-slider").slick({
+	dots: true,
+	infinite: true,
+	autoplay: true,
+	pauseOnHover: true,
+	centerMode: false,
+	fade: true,
+	cssEase: "linear",
+	arrows: false,
+});
+
 $(".brand-slider").slick({
 	fade: false,
 	slidesToShow: 6,
@@ -115,6 +128,9 @@ $(".brand-slider").slick({
 		},
 	],
 });
+
+
+
 
 // Active Path Active
 var path = location.pathname.split("/");
