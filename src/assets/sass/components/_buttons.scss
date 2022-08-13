@@ -34,8 +34,8 @@
 	font-size: 18px;
 	border: 1px solid hsl(var(--border));
 	&:hover {
-		background-color: hsl(var(--border));
-		border-color: hsl(var(--border));
+		background-color: hsl(var(--base));
+		border-color: hsl(var(--base));
 		color: hsl(var(--white));
 	}
 }

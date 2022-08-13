@@ -78,3 +78,26 @@
         }
     }
 }
+
+
+// Contact Section Starts Here 
+.contact-title {
+    letter-spacing: 10px;
+}
+.contact-form {
+    .form--control {
+        &::placeholder {
+            font-size: 40px;
+            @include breakpoint (max-md) {
+                font-size: 32px;
+            }
+        }
+    }
+}
+.social-media {
+    li {
+        a {
+            font-size: 30px;
+        }
+    }
+}
