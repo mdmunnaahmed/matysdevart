@@ -15,6 +15,9 @@
 	@extend %flex;
 	justify-content: space-between;
 	padding: 10px 0;
+	@include min(1800px) {
+		padding: 25px 0 20px;
+	}
 	@include breakpoint(sm) {
 		position: relative;
 	}
@@ -80,6 +83,10 @@
 				font-size: 14px;
 			}
 		}
+
+		a {
+			font-family: var(--heading-font);
+		}
 	}
 	.menu-close {
 		position: absolute;
@@ -99,10 +106,10 @@
 	}
 	.menu > li > a {
 		padding: 15px 40px;
-		font-size: 20px;
+		font-size: 22px;
 		text-transform: uppercase;
 		@include breakpoint(max-xxl) {
-			font-size: 18px;
+			font-size: 20px;
 		}
 		&.active {
 			color: hsl(var(--base));

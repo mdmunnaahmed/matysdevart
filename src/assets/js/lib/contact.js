@@ -26,7 +26,7 @@
 		if (name && email && message) {
 			$.ajax({
 				type: "POST",
-				url: "../../contact.php",
+				url: "contact.php",
 				data: {
 					name: name,
 					email: email,
@@ -38,14 +38,14 @@
 					$("#name").val("");
 					$("#email").val("");
 					$("#message").val("");
-					$(".email-success").fadeOut(3000);
+					$(".email-success").fadeOut(5000);
 				},
 				error: function (res) {},
 			});
 		} else {
 			$("#contact_form").children(".email-success").remove();
 			$("#contact_form").prepend('<span class="alert alert-danger email-success contact-alert">Somenthing went wrong</span>');
-			$(".email-success").fadeOut(3000);
+			$(".email-success").fadeOut(5000);
 		}
 	});
 })(jQuery);

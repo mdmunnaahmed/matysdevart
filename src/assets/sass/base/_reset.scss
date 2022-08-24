@@ -13,6 +13,9 @@ body {
 	@include breakpoint(max-lg) {
 		font-size: 18px;
 	}
+	@include min(1800px) {
+		font-size: 22px;
+	}
 }
 a {
 	text-decoration: none;
@@ -36,4 +39,9 @@ a {
 .custom-container {
 	max-width: 1250px;
 	margin: 0 auto;
+}
+.container {
+	@include min(1800px) {
+		max-width: 1850px;
+	}
 }

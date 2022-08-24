@@ -1,65 +1,67 @@
 .border-bottom {
-    border-bottom: 1px solid hsl(var(--border)) !important;
-    padding-top: 10px;
-
+	border-bottom: 1px solid hsl(var(--border)) !important;
+	padding-top: 10px;
 }
 .footer-menu {
-    margin: 0 -40px;
-    @include breakpoint (max-xl) {
-        margin: 0 -30px;
-    }
-    @include breakpoint (max-sm) {
-        margin: 0 -9px;
-    }
-    li {
-        padding: 0 40px;
-        @include breakpoint (max-xl) {
-            padding: 0 30px;
-        }
-        @include breakpoint (max-sm) {
-            padding: 0 9px;
-        }
-     a {
-        text-transform: uppercase;
-         @include breakpoint (max-xxl) {
-             font-size: 18px;
-         }
-         @include breakpoint (max-xl) {
-             font-size: 16px;
-         }
-     }
- }
+	margin: 0 -40px;
+	@include breakpoint(max-xl) {
+		margin: 0 -30px;
+	}
+	@include breakpoint(max-sm) {
+		margin: 0 -9px;
+	}
+	li {
+		padding: 0 40px;
+		@include breakpoint(max-xl) {
+			padding: 0 30px;
+		}
+		@include breakpoint(max-sm) {
+			padding: 0 9px;
+		}
+		a {
+			font-family: var(--heading-font);
+			text-transform: uppercase;
+			@include breakpoint(max-xxl) {
+				font-size: 18px;
+			}
+			@include breakpoint(max-xl) {
+				font-size: 16px;
+			}
+		}
+	}
 }
 .footer-left {
-    p {
-        @include breakpoint (max-xl) {
-            font-size: 18px;
-        }
-    }
+	p {
+		@include breakpoint(max-xl) {
+			font-size: 18px;
+		}
+	}
 }
 .social-media {
-    &.footer-socail {
-    gap: 15px;
-    li {
-        line-height: 1;
-        a {
-            padding: 7px;
-            background-color: hsl(var(--dark));
-            border-radius: 50%;
-            color: hsl(var(--white));
-            font-size: 22px;
-            &:hover {
-                background-color: hsl(var(--base));
-            }
-        }
-    }
-}
+	&.footer-socail {
+		gap: 15px;
+		li {
+			line-height: 1;
+			a {
+				padding: 7px;
+				background-color: hsl(var(--dark));
+				border-radius: 50%;
+				color: hsl(var(--white));
+				font-size: 22px;
+				&:hover {
+					background-color: hsl(var(--base));
+                    color: hsl(var(--white));
+				}
+			}
+		}
+	}
 }
 .footer-right {
-    .contact-email,
-    .contact-number {
-        @include breakpoint (max-xxl) {
-            font-size: 18px;
-        }
-    }
+	.contact-email,
+	.contact-number {
+		font-family: var(--heading-font);
+		@include breakpoint(max-xxl) {
+			font-size: 18px;
+		}
+	}
 }

@@ -1,12 +1,13 @@
 .btn,
 .cmn--btn {
-	padding: 13px 55px;
+	padding: 13px 105px;
 	font-weight: 400;
 	outline: none !important;
 	box-shadow: none !important;
 	@extend %transition;
 	border-radius: 0px;
 	z-index: 1;
+	font-family: var(--heading-font);
 	@include breakpoint(max-sm) {
 		padding: 10px 45px;
 	}
@@ -31,8 +32,12 @@
 	}
 }
 .cmn--btn {
-	font-size: 18px;
+	font-size: 28px;
 	border: 1px solid hsl(var(--border));
+	background-color: transparent;
+	@include breakpoint(max-md) {
+		font-size: 22px;
+	}
 	&:hover {
 		background-color: hsl(var(--base));
 		border-color: hsl(var(--base));
@@ -41,14 +46,21 @@
 }
 
 .contact-btn {
-	width: 180px;
-	height: 180px;
+	width: 220px;
+	height: 220px;
 	border-radius: 50%;
 	color: hsl(var(--base));
 	border: 1px solid hsl(var(--base));
 	@extend %flex-center;
 	font-size: 18px;
-	@include breakpoint(max-sm) {
+	font-family: var(--heading-font);
+	font-weight: 600;
+	@include min(1800px) {
+		height: 344px;
+		width: 344px;
+		font-size: 28px;
+	}
+	@include breakpoint(max-md) {
 		width: 150px;
 		height: 150px;
 		font-size: 16px;
@@ -57,8 +69,10 @@
 
 .load-more-btn {
 	font-weight: 300;
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 	text-transform: uppercase;
+	font-size: 23px;
+	font-family: var(--heading-font);
 }
 
 $colors: "primary" hsl(var(--primary)), "secondary" hsl(var(--secondary)), "success" hsl(var(--success)), "danger" hsl(var(--danger)), "warning" hsl(var(--warning)), "info" var(--info), "light" hsl(var(--light)), "dark" hsl(var(--dark)),

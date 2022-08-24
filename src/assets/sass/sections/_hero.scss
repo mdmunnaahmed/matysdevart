@@ -1,6 +1,6 @@
 // Banner Section
 .banner-section {
-	padding-top: 100px;
+	padding-top: 120px;
 	z-index: 1;
 	&::before {
 		@extend %position-set;
@@ -10,18 +10,31 @@
     @include breakpoint(max-sm) {
         padding-top: 70px;
     }
+    @include min(1800px) {
+        padding-top: 150px;
+    }
 }
 .banner-title {
-	max-width: 1000px;
-	font-size: 250px;
-	font-weight: 400;
-	line-height: 1;
+	max-width: 1250px;
+	font-size: 300px;
+	font-weight: 700;
+	line-height: .8;
+	@include min(1800px) {
+		max-width: 1400px;
+		font-size: 378px;
+
+	}
+	@include max(1600px) {
+		font-size: 280px;
+		max-width: 1200px;
+	}
 	@include breakpoint(max-xxl) {
-		font-size: 200px;
-		max-width: 750px;
+		font-size: 230px;
+		max-width: 800px;
 	}
 	@include breakpoint(max-xl) {
 		font-size: 180px;
+		max-width: 650px;
 	}
 	@include breakpoint(max-lg) {
 		font-size: 120px;

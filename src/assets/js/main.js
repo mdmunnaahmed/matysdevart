@@ -84,9 +84,10 @@ $(".filter-slider").slick({
 	autoplay: true,
 	pauseOnHover: true,
 	centerMode: false,
-	fade: true,
+	fade: false,
 	cssEase: "linear",
 	arrows: false,
+	// adaptiveHeight: true,
 });
 
 $(".brand-slider").slick({

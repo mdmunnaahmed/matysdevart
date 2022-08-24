@@ -1,8 +1,12 @@
 .filter {
 	justify-content: center;
 	padding: 25px 0;
+	@include min(1800px) {
+		padding: 45px 0;
+	}
 	li {
 		a {
+			font-family: var(--heading-font);
 			color: hsl(var(--body));
 			font-size: 20px;
 			@include breakpoint(max-xxl) {
